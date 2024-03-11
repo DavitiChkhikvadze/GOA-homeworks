@@ -4,18 +4,21 @@ for i in range(21):
 num1 = int(input("please enter your 1st number: "))
 num2 = int(input("please enter your 2nd number: "))
 
-for i in range(num1, num2):
+for i in range(num1 + 1, num2):
     print(i)
 
 for i in range(50, 101):
     print(i)
 
-for i in range (100, 50): 
-    print(i)       #es kargad ver gavige ukugma rogor dameprinta
+for i in range (100, 49, -1): 
+    print(i)       
 
 result = 0
 for i in range(0, 51):
-    result = result + i
+    print(i)
+    result += i
+
+print(i)
 
 num3 = int(input("please enter your 3rd number: "))
 
