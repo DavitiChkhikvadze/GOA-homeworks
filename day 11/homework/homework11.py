@@ -1,27 +1,28 @@
 #for loop
 
-for i in range(11):
-    print(i * 5)
+for i in range(1, 51):
+    if i % 5 == 0:
+        print(i)
 
-for i in range(1, 11):
-    print(i * 2)
+for i in range(2, 21):
+    if i % 2 == 0:
+        print(i)
 
 num = 1
-for i in range(5,11):
-    num = num + 1
-    print(i * num)
+for i in range(5, 11):
+    num = num * i
+    print(num)
 
+user_num = int(input('enter number here: '))
+final_product = 1
+for i in range(1, user_num + 1):
+    final_product *= i
+    print(user_num , 's factorial is' , final_product)
 
-import math
-def fact(n):
-    return(math.factorial(n))
-num1 = int(input("Enter the number:"))
-f = fact(num1)
-print("Factorial of", num1, "is", f)
 
 num2 = int(input("enter your number: "))
 
-if (num2 % 2) == 0: 
+if num2 % 2 == 0: 
     print(num2 / 2)
 
 else:
@@ -35,25 +36,18 @@ while number > 0:
     number -= 1
 
 name = input("enter your name: ")
-if name != quit:
-    input("please, enter your name again: ")
-
-else: 
-    print("thanks")
-
+while name != "quit":
+    name = input("please, enter your name again: ")
 
 number1 = 10
-while  number1 < 20:
+while  number1 < 21:
     print(number1)
     number1 += 2
 
 number2 = int(input("enter your number: "))
+while number2 < 0:
+    number2 = int(input("enter your number: "))
 
-if number2 == 7:
-    print("you guessed the number")
-
-else:
-    input("enter number again: ")
 
 number3 = 1
 while number3 < 11:
