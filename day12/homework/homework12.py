@@ -67,11 +67,21 @@ for i in range(user_input_for_for_loop1, user_input_for_for_loop2, user_input_fo
 
 #შექმენით კალკულატორი, სადაც მომხმარებელი აირჩევს შემდეგ ოპერაციებს: + - * / 
 #და მის მიერ შემოტანილი ორი რიცხვით მიიღებს პასუხს.
-user_operation = input("enter one of these operations: +, -, *, /: ")        
-user_num1 = int(input("enter your number here: "))
-user_num2 = int(input("enter your number here: "))
 
-print(user_num1, user_operation, user_num2, "=" , user_num1 + user_num2 )
+operation = input("Please enter operation (+,-,*,/): ")
+num1 = int(input("Please enter first number: "))
+num2 = int(input("Please enter second number: "))
+
+if operation == '+':
+    print(num1 + num2)
+elif operation == '-':
+    print(num1 - num2)
+elif operation == '*':
+    print(num1 * num2)
+elif operation == '/':
+    print(num1 / num2)
+else:
+    print("operation is not valid")
 
 
 #მომხმარებელს შემოატანინეთ რიცხვი და შეამოწმეთ თუ არის როგორც ორის, ასევე სამის ჯერადი.
