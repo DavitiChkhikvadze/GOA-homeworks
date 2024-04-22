@@ -16,3 +16,4 @@ print(new_list)
 
 user_word = input("enter your word here: ")
 print(user_word[::-1])
+
