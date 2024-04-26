@@ -27,8 +27,8 @@ print(math_checker(5, 2))
 def greeting(name):
     return('hello ', name)
 
-greeting("Daviti")
-greeting("GOA")
+print(greeting("Daviti"))
+print(greeting("GOA"))
 
 
 
