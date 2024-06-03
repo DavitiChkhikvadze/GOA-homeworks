@@ -18,7 +18,7 @@ print(nums_of_4([1,4,3,16,8,12,9,6]))
 
 def manual_count(lists, counter):
     counter = 0
-    for i in lists:
+
         #ver gggavige
 
 
