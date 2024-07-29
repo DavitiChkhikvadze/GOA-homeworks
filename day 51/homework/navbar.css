@@ -11,24 +11,37 @@ header {
     background-color: black;
     color: white;
     position: fixed;
+    padding: 15px 0;
 }
 ul {
     display: flex;
     list-style: none;
     gap: 30px;
 }
-@media (max-width: 630px){
+ul li a {
+    cursor: pointer;
+    transition: 0.2s;
+}
+ul li a:hover {
+    color: white;
+    text-decoration: none;
+}
+@media (max-width: 767px){
     header {
         flex-direction: column;
-        height: 15%;
+        height: auto;
+    }
+    ul {
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 }
-@media (max-width: 300px){
+@media (max-width: 460px){
     header {
         height: auto
     }
     ul {
         flex-direction: column;
-        padding: 10%;
+        padding: 10px;
     }
 } 
