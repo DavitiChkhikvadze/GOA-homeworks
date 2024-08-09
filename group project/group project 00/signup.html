@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="signup.css">
+    <script>
+        function redirectToPage() {
+            window.location.href = "home.html"
+        }
+    </script>
+</head>
+<body>
+    <div class="div1"> 
+        <p class="p1">sign up</p>
+        <form>
+            <br>
+            <input class="input1" type="text" placeholder="username or email" required>
+            <br><br>
+            <input class="input2" type="text" placeholder="password" required>
+            <input class="input3" id="1" type="checkbox">
+            <label for="1">Remember me</label>
+            <br><br>
+            <button class="input4" type="submit" onclick="redirectToPage()">signup</button>
+            <p class="p2">already have an account? <a href="index.html">log in</a></p>
+        </form>
+    </div>
+</body>
+</html>
